@@ -13,7 +13,7 @@
         <TextBox x:Name="txtTiempoFinal" HorizontalAlignment="Left" Height="23" Margin="107,34,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="94" IsEnabled="False"/>
         <TextBlock HorizontalAlignment="Left" Margin="206,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Text="Frecuencia de muestreo:" Height="25"/>
         <TextBox x:Name="txtFrecuenciaMuestreo" HorizontalAlignment="Left" Height="23" Margin="206,34,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="94" IsEnabled="False"/>
-        <Button x:Name="btnGraficar" Content="Graficar" HorizontalAlignment="Left" Margin="157,424,0,0" VerticalAlignment="Top" Width="208" Height="36" Click="btnGraficar_Click"/>
+        <Button x:Name="btnGraficar" Content="Graficar" HorizontalAlignment="Left" Margin="157,329,0,0" VerticalAlignment="Top" Width="208" Height="36" Click="btnGraficar_Click"/>
         <ScrollViewer x:Name="scrContenedor" HorizontalAlignment="Left" Height="284" Margin="450,10,0,0" VerticalAlignment="Top" Width="706" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden" >
             <Grid>
                 <Polyline Stroke="Magenta" StrokeThickness="2" Name="plnGrafica" />
@@ -35,11 +35,12 @@
         <TextBlock x:Name="lblAmplitudMaximaY_Resultado" HorizontalAlignment="Left" Margin="397,0,0,411" TextWrapping="Wrap" Text="0" VerticalAlignment="Bottom" Width="51" Height="25"/>
         <TextBlock x:Name="lblAmplitudMaximaNegativaY_Resultado" HorizontalAlignment="Left" Margin="397,568,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="3.787,0.376" Width="51" Height="26"/>
         <TextBlock x:Name="lblAmplitudCero_Resultado" HorizontalAlignment="Left" Margin="421,447,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="24" FontSize="16" Height="21"/>
-        <Button x:Name="btnTransformadaFourier" Content="Transformada de Fourier" HorizontalAlignment="Left" Margin="157,471,0,0" VerticalAlignment="Top" Width="208" Height="39" Click="btnTransformadaFourier_Click"/>
-        <TextBlock x:Name="Hertz" HorizontalAlignment="Left" Margin="236,562,0,0" TextWrapping="Wrap" Text="0 Hz" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,95,0,0" TextWrapping="Wrap" Text="Ruta de archivo" VerticalAlignment="Top" Width="92"/>
-        <TextBox x:Name="txtRutaArchivo" HorizontalAlignment="Left" Height="23" Margin="8,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
-        <Button Content="Examinar" HorizontalAlignment="Left" Margin="8,145,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="btnTransformadaFourier" Content="Transformada de Fourier" HorizontalAlignment="Left" Margin="157,388,0,0" VerticalAlignment="Top" Width="208" Height="39" Click="btnTransformadaFourier_Click"/>
+        <TextBlock x:Name="Hertz" HorizontalAlignment="Left" Margin="300,665,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,80,0,0" TextWrapping="Wrap" Text="Ruta del archivo:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRutaArchivo" HorizontalAlignment="Left" Height="23" Margin="8,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+        <Button x:Name="btnExaminar" Content="Examinar" HorizontalAlignment="Left" Margin="8,137,0,0" VerticalAlignment="Top" Width="75" Click="btnExaminar_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="233,670,0,0" TextWrapping="Wrap" Text="Tecla: " VerticalAlignment="Top" Height="21" Width="67" FontSize="18" FontWeight="Bold"/>
 
     </Grid>
 </Window>
